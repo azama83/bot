@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 from deep_translator import GoogleTranslator
+from keep_alive import keep_alive
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -45,4 +46,5 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # --- LANCER LE BOT ---
+keep_alive()
 bot.run(TOKEN)
