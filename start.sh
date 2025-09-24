@@ -1,1 +1,1 @@
-python bot_translate.py.txt
+python bot_translate.py
