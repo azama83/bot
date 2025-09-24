@@ -1,6 +1,6 @@
+import os
 from flask import Flask
 from threading import Thread
-import os
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def home():
     return "Bot is alive!"
 
 def run():
-    port = int(os.environ.get("PORT", 8080))  # Render choisit le port
+    port = int(os.environ.get("PORT", 8080))  # Render fournit le PORT
     app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
