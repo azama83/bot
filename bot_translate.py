@@ -6,8 +6,8 @@ from deep_translator import GoogleTranslator
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-FR_CHANNEL_ID = 1420105579720085697  # ID de ton salon #français
-EN_CHANNEL_ID = 1420105615660810371  # ID de ton salon #english
+FR_CHANNEL_ID = 1420386356647166052  # ID de ton salon #français
+EN_CHANNEL_ID = 1420386460443480064  # ID de ton salon #english
 
 # --- INTENTS ---
 intents = discord.Intents.default()
